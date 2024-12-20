@@ -37,9 +37,9 @@ class AddUpdateNoteFragment : Fragment() {
             NotesViewModel::class.java)
 
         if (arguments != null) {
-
+            binding.noteType.text = "Update Note"
+            binding.saveNotes.text = "Update"
             val notes: Notes? = arguments?.getParcelable("note")
-
             notes?.let {
                 binding.note.setText(notes.note)
                 binding.title.setText(notes.title)
@@ -62,6 +62,8 @@ class AddUpdateNoteFragment : Fragment() {
             }
 
         } else {
+            binding.noteType.text = "Add New Note"
+            binding.saveNotes.text = "Save"
 
             binding.saveNotes.setOnClickListener {
                 val title = binding.title.text.toString().trim()
