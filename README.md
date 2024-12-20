@@ -20,6 +20,9 @@ Notes App is a simple, user-friendly note-taking app built with Kotlin and Room 
 
 # App Video
 
+![VID_20241220153220](https://github.com/user-attachments/assets/f712d618-cad6-4e12-b847-5ac55bde8669)
+
+
 
 
 
